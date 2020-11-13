@@ -78,7 +78,7 @@ handleCardClick = index => {
 
   render() {
     const { cards, currentPair, guesses, matchedCardIndices } = this.state;
-    const won = matchedCardIndices.length === cards.length;
+    const won                                                 = matchedCardIndices.length === cards.length;
     return (
       <div className="memory">
         <GuessCount guesses={guesses} />
